@@ -1,0 +1,48 @@
+/* Footer */
+
+.footer {
+  position: relative;
+  @include widthHeight(100%,12.5rem);
+ overflow: hidden;
+}
+
+.footer-banner {
+  @include widthHeight(100%,100%);
+  object-fit: cover;
+  display: block;
+}
+
+.footer-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include widthHeight(100%,100%);
+  color: $colorNegro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: $colorNegro;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.logotipo-footer {
+  @include widthHeight(40px,40px);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.logotipo-footer:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 4px 8px;
+}

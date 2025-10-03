@@ -1,0 +1,33 @@
+.BannerLogo-container {
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  overflow: visible;
+}
+
+.banner-image {
+  @include widthHeight(100%,100%);  
+  object-fit: cover;
+  display: block;
+}
+.banner-text h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+.logo-image {
+  position: absolute;
+  top: 50%;
+  right: 1.8rem;
+  transform: translateY(-50%);
+  height: 12.5rem;
+  z-index: 2;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 1.8rem;
+  transform: translateY(-50%);
+  max-width: 60%;
+  color: #010036;
+}
